@@ -1,1078 +1,1292 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Avoodaiappan's PortFolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Avoodaiappan's PortFolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Avoodaiappan M, Junior Software Developer, MCA, Python, JavaScript, Java, Web Development, Portfolio"
+        name="keywords">
+    <meta
+        content="Portfolio of Avoodaiappan M - Junior Software Developer & MCA Student passionate about software development, AI, ML, and web technologies."
+        name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+<body>
+    <!-- Ambient Lighting Effects -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+    <div class="bg-grid-overlay"></div>
 
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3.5rem; height: 3.5rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
 
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
-                    <a href="#pigraBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Blog</a>
-                    <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+    <!-- Floating Capsule Navbar Start -->
+    <header class="site-header">
+        <div class="container-xxl">
+            <nav class="nav-capsule">
+                <a href="#pigraHome" class="brand-badge">
+                    <div class="brand-avatar">A</div>
+                    <span>Avoodaiappan </span>
+                </a>
+
+                <ul class="nav-links-cluster navbar-nav flex-row">
+                    <li>
+                        <a href="#pigraHome" class="nav-capsule-link nav-link active" title="Home">
+                            <i class="fa fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pigraAbout" class="nav-capsule-link nav-link" title="About">
+                            <i class="far fa-address-card"></i> <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pigraService" class="nav-capsule-link nav-link" title="Projects">
+                            <i class="fab fa-servicestack"></i> <span>Service</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pigraBlog" class="nav-capsule-link nav-link" title="Blog">
+                            <i class="fa fa-blog"></i> <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pigraContact" class="nav-capsule-link nav-link" title="Contact">
+                            <i class="fas fa-address-book"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-cta-wrap">
+                    <a href="#pigraContact" class="btn btn-primary nav-cta-btn">
+                        <span>Get in Touch</span> <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </nav>
         </div>
-        <!-- Navbar End -->
+    </header>
+    <!-- Floating Capsule Navbar End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0"></h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 Hello I'm Avoodaiappan M</p>
-                                <h1 class="display-6 text-white mb-0">Junior Developer</h1>
+
+    <!-- HERO SECTION START (`#pigraHome`) -->
+    <section class="hero-section" id="pigraHome">
+        <div class="container-xxl">
+            <div class="row g-5 align-items-center">
+
+                <!-- Hero Left: Typography & Action -->
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="hero-status-pill">
+                        <span class="hero-status-dot"></span>
+                        <span>👋 Hello I'm Avoodaiappan M • Junior Developer</span>
+                    </div>
+
+                    <h1 class="hero-main-title">
+                        Junior <span class="text-gradient">Software</span> Developer
+                    </h1>
+
+                    <p class="hero-sub-lead">
+                        Passionate and detail-oriented Junior Software Developer with a strong foundation in
+                        programming, software development, and problem-solving. Skilled in Python, JavaScript, Java
+                    </p>
+
+                    <!-- Contact Details Strip -->
+                    <div class="hero-contact-strip">
+                        <div class="hero-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="d-block text-muted" style="font-size: 0.75rem;">Location</span>
+                                <span class="small text-white fw-medium">42 A, Alwar Street Kovilpatti-628501</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="d-block text-muted" style="font-size: 0.75rem;">Email</span>
+                                <span class="small text-white fw-medium">avoodaiappan2004@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-contact-item">
+                            <i class="fa fa-phone-alt"></i>
+                            <div>
+                                <span class="d-block text-muted" style="font-size: 0.75rem;">Phone</span>
+                                <span class="small text-white fw-medium">9750480363</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="d-block text-muted" style="font-size: 0.75rem;">GitHub</span>
+                                <span class="small text-white fw-medium">Avoodaiappan2004</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/Photo1.png" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">Junior Software Developer</h1>
-                                    <p class="mb-4">Passionate and detail-oriented Junior Software Developer with a strong foundation in programming, software development, and problem-solving. Skilled in Python, JavaScript, Java
-                                    </p>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">42 A, Alwar Street Kovilpatti-628501</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">avoodaiappan2004@gmail.com</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">9750480363</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-4">
-                                        <i class="fab fa-github me-2 text-primary me-3"></i>
-                                        <p class="text-dark mb-0">Avoodaiappan2004</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-0" href="https://www.linkedin.com/in/avoodaiappan-m-23534324a/"><i class="fab fa-linkedin-in text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <!-- CTA Actions & Social Links -->
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                        <a href="#pigraService" class="btn btn-primary">
+                            <span>Explore Projects</span> <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="img/cv.pdf" target="_blank" class="btn btn-glass">
+                            <i class="fas fa-download"></i> <span>Download CV</span>
+                        </a>
+                        <div class="d-flex align-items-center gap-2 ms-lg-3">
+                            <a class="social-circle-btn" href="#" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="social-circle-btn" href="#" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="social-circle-btn" href="#" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="social-circle-btn" href="https://www.linkedin.com/in/avoodaiappan-m-23534324a/"
+                                target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Hero Right: Asymmetric Visual Card -->
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="hero-visual-card">
+                        <div class="hero-glow-underlay"></div>
+                        <div class="hero-portrait-frame">
+                            <img src="img/Photo.png" alt="Avoodaiappan M - Junior Software Developer">
+                        </div>
+
+                        <!-- Floating Interactive Badges -->
+                        <div class="floating-tech-chip chip-1">
+                            <i class="fab fa-python text-primary fs-5"></i>
+                            <span>Python Developer</span>
+                        </div>
+
+                        <div class="floating-tech-chip chip-2">
+                            <i class="fab fa-js-square text-warning fs-5"></i>
+                            <span>MCA Scholar</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- Header End -->
+    </section>
+    <!-- HERO SECTION END -->
 
 
-        <!-- About Start -->
-        <div class="container-fluid" id="pigraAbout">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">About Me</h1>
-                                <p class="text-white sub-title">A Junior Software Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="about-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-5">
-                                    <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/aboutme.jpeg" class="img-fluid w-100" alt="Image">
-                                        <div class="sosial-icon">
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h4 class="mb-4">Hello, I'm Avoodaiappan</h4>
-                                    <p class="mb-4"> Proficient in frontend development, database management
-                                    </p>
-                                    <div class="row g-4 mb-4">
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">🔹 Strong understanding of algorithms, data structures, and software design principles.</strong></p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark"> 🔹 Enthusiastic about learning new technologies and improving coding skills.</strong></p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark"> 🔹 Enthusiastic about AI, ML, and automation for enhancing software efficiency.</strong></p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">I thrive on learning new technologies, optimizing code, and creating efficient solutions. With a keen interest in AI, machine learning, and automation, I am always exploring innovative ways to improve software development. My experience includes working on real-world projects, one of that is Face Recognition Attendance System</strong></p>
-                                        </div>
-                                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                            <p><strong><b>Looking to contribute my skills and grow in a dynamic development environment</b></strong></p>
-                                        </div>
-                                    </div>
-                                    <a  class="btn btn-primary py-2 px-4"href="img/cv.pdf" target="_blank"> <i class="fas fa-download me-2"></i>Download My CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- ABOUT ME SECTION START (`#pigraAbout`) -->
+    <section class="section-wrapper" id="pigraAbout">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="far fa-user"></i> About Me
                 </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Education Start -->
-        <div class="container-fluid">
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-lg-3">
-        <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
-          <div
-            class="text-start d-flex flex-column justify-content-center wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <p class="text-white sub-title">My education qualification</p>
-            <h1 class="display-6 text-white mb-0">Education</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-9">
-        <div class="education-content h-100 pt-6 ps-6 pb-6">
-          <div class="row g-4">
-
-            <div class="col-12">
-              <div class="education-item hover-card rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <p class="fs-5 mb-0 me-4">
-                    Francis Xavier Engineering College,Tirunelveli
-                  </p>
-                  <div>
-                    <span class="fa fa-calendar me-1"></span> 2025 - Prusuing
-                  </div>
-                </div>
-                <h4 class="mb-3">Master of Computer Application (MCA)</h4>
-                <p class="mb-0">
-                 I am now pursuing my Master of Computer Applications (MCA) to further specialize in advanced computing, software engineering, and emerging technologies.
+                <h2 class="section-title">
+                    A <span class="text-gradient">Junior Software</span> Developer
+                </h2>
+                <p class="section-desc mx-auto">
+                    Proficient in frontend development, database management
                 </p>
-                <!-- Hover info -->
-                <div class="hover-info">PG</div>
-              </div>
             </div>
 
+            <!-- Bento Grid Architecture -->
+            <div class="bento-grid">
 
-            <!-- UG -->
-            <div class="col-12">
-              <div class="education-item hover-card rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <p class="fs-5 mb-0 me-4">
-                    Sri S.Ramasamy Naidu Memorial College, Sattur
-                  </p>
-                  <div>
-                    <span class="fa fa-calendar me-1"></span> 2022 - 2025
-                  </div>
+                <!-- Bento 1: Main Story / Philosophy -->
+                <div class="bento-card bento-about-main wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="text-white mb-3 fw-bold" style="font-size: 1.6rem;">Hello, I'm Avoodaiappan</h3>
+                    <p class="lead text-secondary mb-4" style="font-size: 1.05rem; line-height: 1.8;">
+                        I thrive on learning new technologies, optimizing code, and creating efficient solutions. With a
+                        keen interest in AI, machine learning, and automation, I am always exploring innovative ways to
+                        improve software development. My experience includes working on real-world projects, one of that
+                        is Face Recognition Attendance System
+                    </p>
+                    <div class="p-3 rounded-3 bg-dark border border-subtle">
+                        <p class="mb-0 text-white font-monospace small">
+                            💡 <strong>Looking to contribute my skills and grow in a dynamic development
+                                environment</strong>
+                        </p>
+                    </div>
                 </div>
-                <h4 class="mb-3">B.Sc Computer Science</h4>
-                <p class="mb-0">
-                 I have completed my Bachelor’s Degree in Computer Science with a CGPA of 8.62. Throughout my academic journey, I developed a strong foundation in software,web development, data structures and programming languages.
-                <!-- Hover info -->
-                <div class="hover-info">UG</div>
-              </div>
+
+                <!-- Bento 2: Profile Portrait Frame with Social Overlay -->
+                <div class="bento-card bento-about-visual wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="about-portrait-wrapper">
+                        <img src="img/aboutme.jpeg" alt="Avoodaiappan M Portrait">
+                        <div class="about-social-overlay">
+                            <a class="social-circle-btn" href="#" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="social-circle-btn" href="#" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="social-circle-btn" href="#" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="social-circle-btn" href="#" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento 3: Core Engineering Pillars -->
+                <div class="bento-card bento-pillars-card wow fadeInUp" data-wow-delay="0.3s">
+                    <h4 class="text-white mb-3 fw-bold">Engineering Highlights</h4>
+                    <div class="pillar-bullet-item">
+                        <div class="pillar-icon-badge">🔹</div>
+                        <div>
+                            <strong class="text-white">Strong understanding of algorithms, data structures, and software
+                                design principles.</strong>
+                        </div>
+                    </div>
+                    <div class="pillar-bullet-item">
+                        <div class="pillar-icon-badge">🔹</div>
+                        <div>
+                            <strong class="text-white">Enthusiastic about learning new technologies and improving coding
+                                skills.</strong>
+                        </div>
+                    </div>
+                    <div class="pillar-bullet-item">
+                        <div class="pillar-icon-badge">🔹</div>
+                        <div>
+                            <strong class="text-white">Enthusiastic about AI, ML, and automation for enhancing software
+                                efficiency.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento 4: Resume / CV Download Card -->
+                <div class="bento-card bento-cv-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div>
+                        <span class="badge bg-primary px-3 py-2 rounded-pill mb-3 font-monospace small">Curriculum
+                            Vitae</span>
+                        <h4 class="text-white fw-bold mb-2">Want to know more?</h4>
+                        <p class="text-secondary small mb-4">
+                            Download my complete verified CV to review my academic credentials and technical projects.
+                        </p>
+                    </div>
+                    <a class="btn btn-primary py-3 w-100" href="img/cv.pdf" target="_blank">
+                        <i class="fas fa-download me-2"></i>Download My CV
+                    </a>
+                </div>
+
             </div>
 
-            <!-- HSC -->
-            <div class="col-12">
-              <div class="education-item hover-card rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="d-flex align-items-center mb-3">
-                  <p class="fs-5 mb-0 me-4">
-                    St Paul's Matriculation Higher Secondary School, Kovilpatti
-                  </p>
-                  <div>
-                    <span class="fa fa-calendar me-1"></span> 2021 - 2022
-                  </div>
+        </div>
+    </section>
+    <!-- ABOUT ME SECTION END -->
+
+
+    <!-- EDUCATION SECTION START -->
+    <section class="section-wrapper" id="educationSection">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-graduation-cap"></i> My education qualification
                 </div>
-                <h4 class="mb-3">HSC II nd Year (12th)</h4>
-                <p class="mb-0">
-                  I completed my 12th grade with 85%, developing a strong
-                  foundation in mathematics and logical
-                  reasoning.
+                <h2 class="section-title">
+                    Academic <span class="text-gradient">Journey</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    A track record of consistent academic excellence and specialized technical computing education.
                 </p>
-                <!-- Hover info -->
-                <div class="hover-info">Schooling</div>
-              </div>
             </div>
 
-          </div>
+            <!-- Interactive Milestone Journey Timeline -->
+            <div class="timeline-journey">
+
+                <!-- Milestone 1: PG -->
+                <div class="timeline-milestone wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="milestone-node">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="milestone-card">
+                        <span class="milestone-badge-pill">PG</span>
+                        <div class="milestone-date">
+                            <i class="far fa-calendar-alt"></i> 2025 - Prusuing
+                        </div>
+                        <h3 class="text-white fw-bold mb-1" style="font-size: 1.4rem;">Master of Computer Application
+                            (MCA)</h3>
+                        <h5 class="text-primary fw-medium mb-3" style="font-size: 1.05rem;">Francis Xavier Engineering
+                            College,Tirunelveli</h5>
+                        <p class="text-secondary mb-0">
+                            I am now pursuing my Master of Computer Applications (MCA) to further specialize in advanced
+                            computing, software engineering, and emerging technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2: UG -->
+                <div class="timeline-milestone wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="milestone-node">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="milestone-card">
+                        <span class="milestone-badge-pill">UG</span>
+                        <div class="milestone-date">
+                            <i class="far fa-calendar-alt"></i> 2022 - 2025
+                        </div>
+                        <h3 class="text-white fw-bold mb-1" style="font-size: 1.4rem;">B.Sc Computer Science</h3>
+                        <h5 class="text-primary fw-medium mb-3" style="font-size: 1.05rem;">Sri S.Ramasamy Naidu
+                            Memorial College, Sattur</h5>
+                        <p class="text-secondary mb-0">
+                            I have completed my Bachelor’s Degree in Computer Science with a CGPA of 8.62. Throughout my
+                            academic journey, I developed a strong foundation in software,web development, data
+                            structures and programming languages.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3: HSC Schooling -->
+                <div class="timeline-milestone wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="milestone-node">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="milestone-card">
+                        <span class="milestone-badge-pill">Schooling</span>
+                        <div class="milestone-date">
+                            <i class="far fa-calendar-alt"></i> 2021 - 2022
+                        </div>
+                        <h3 class="text-white fw-bold mb-1" style="font-size: 1.4rem;">HSC II nd Year (12th)</h3>
+                        <h5 class="text-primary fw-medium mb-3" style="font-size: 1.05rem;">St Paul's Matriculation
+                            Higher Secondary School, Kovilpatti</h5>
+                        <p class="text-secondary mb-0">
+                            I completed my 12th grade with 85%, developing a strong foundation in mathematics and
+                            logical reasoning.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
+    </section>
+    <!-- EDUCATION SECTION END -->
+
+
+    <!-- TECHNICAL SKILLS SECTION START -->
+    <section class="section-wrapper" id="skillsSection">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-code"></i> My Technical Skills
+                </div>
+                <h2 class="section-title">
+                    Core Technical <span class="text-gradient">Proficiencies</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Hands-on software development competencies, languages, database tools, and web technologies.
+                </p>
+            </div>
+
+            <!-- Skills Matrix Grid -->
+            <div class="skills-matrix-grid">
+
+                <!-- Skill 1: C -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo"
+                                width="38" height="38" style="object-fit: contain;">
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">65</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">C Programming</h4>
+                    <p class="text-muted small mb-0">Fundamental system programming & algorithms</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Python -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <span class="fab fa-python fa-2x text-primary"></span>
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">85</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">Python</h4>
+                    <p class="text-muted small mb-0">Computer vision, AI/ML, automation & scripting</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Java -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+                                alt="Java Logo" width="28" height="38" style="object-fit: contain;">
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">75</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">Java</h4>
+                    <p class="text-muted small mb-0">Object-oriented architecture & backend logic</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4: SQL -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                                alt="SQL Logo" width="38" height="38" style="object-fit: contain;">
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">80</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">SQL</h4>
+                    <p class="text-muted small mb-0">Relational databases, queries & optimization</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 5: JavaScript -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <span class="fab fa-js-square fa-2x text-warning"></span>
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">67</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">JavaScript</h4>
+                    <p class="text-muted small mb-0">Dynamic client-side programming & APIs</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 67%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 6: HTML & CSS -->
+                <div class="skill-matrix-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="skill-icon-box">
+                            <span class="fab fa-html5 fa-2x text-danger"></span>
+                        </div>
+                        <div class="d-flex align-items-baseline font-mono">
+                            <span class="display-6 text-white fw-bold" data-toggle="counter-up">87</span>
+                            <span class="fs-4 text-primary fw-bold ms-1">%</span>
+                        </div>
+                    </div>
+                    <h4 class="text-white fw-bold mb-1">HTML & CSS</h4>
+                    <p class="text-muted small mb-0">Responsive layouts, modern UI styling & web design</p>
+                    <div class="skill-meter-wrap">
+                        <div class="skill-meter-fill" style="width: 87%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- TECHNICAL SKILLS SECTION END -->
+
+
+    <!-- MY PROJECTS SECTION START (`#pigraService`) -->
+    <section class="section-wrapper" id="pigraService">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-layer-group"></i> Where My Knowledge Meets Challenge
+                </div>
+                <h2 class="section-title">
+                    Featured <span class="text-gradient">Projects</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Real-world applications engineered with Python, Computer Vision, Flutter, and JavaScript.
+                </p>
+            </div>
+
+            <!-- Project Showcase Container -->
+            <div class="project-showcase-container">
+
+                <!-- Project 01: Face Recognition Attendance System -->
+                <div class="project-showcase-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-5 align-items-center">
+
+                        <div class="col-lg-6">
+                            <div class="project-index-num">01</div>
+                            <h3 class="project-title-heading">
+                                <a href="img/face.png" data-lightbox="face-project"
+                                    data-title="Face Recognition Attendance System">
+                                    Face Recognition Attendance System
+                                </a>
+                            </h3>
+                            <p class="text-secondary mb-4" style="line-height: 1.8;">
+                                Developed an intelligent face recognition system to automate attendance tracking with
+                                real-time statusupdates and detailed Excel reporting.
+                            </p>
+
+                            <div class="mb-4">
+                                <div class="text-white small fw-bold mb-2 font-mono">Python Libraries</div>
+                                <div class="d-flex flex-wrap">
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Pickle</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Open CV</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> FaceRecognition</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://github.com/Avoodaiappan2004/Face_Attendance_System" target="_blank"
+                                    class="btn btn-outline-primary">
+                                    <i class="fab fa-github"></i> <span>View Code (GitHub)</span>
+                                </a>
+                                <a href="img/login.png" data-lightbox="face-project" class="btn btn-glass">
+                                    <span>👀 View Screenshots 📷</span>
+                                </a>
+                            </div>
+
+                            <!-- Hidden Gallery Anchors for Lightbox -->
+                            <a href="img/login.png" data-lightbox="face-project" data-title="Login Page"></a>
+                            <a href="img/env.png" data-lightbox="face-project" data-title="Home Page"></a>
+                            <a href="img/newst.png" data-lightbox="face-project"
+                                data-title="New Student Register Page"></a>
+                            <a href="img/staff.png" data-lightbox="face-project" data-title="New Staff Page"></a>
+                            <a href="img/faceai.png" data-lightbox="face-project" data-title="Face AI"></a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="project-preview-wrap">
+                                <img src="img/face.png" alt="Face Recognition Attendance System Preview">
+                                <div class="project-preview-overlay">
+                                    <a href="img/login.png" data-lightbox="face-project" class="btn btn-primary">
+                                        👀 View Gallery
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project 02: Hand Gesture Controlled System -->
+                <div class="project-showcase-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row g-5 align-items-center flex-lg-row-reverse">
+
+                        <div class="col-lg-6">
+                            <div class="project-index-num">02</div>
+                            <h3 class="project-title-heading">
+                                <a href="img/hand1.png" data-lightbox="hand-project"
+                                    data-title="Hand Gesture Control System">
+                                    Hand Gesture Controlled System
+                                </a>
+                            </h3>
+                            <p class="text-secondary mb-4" style="line-height: 1.8;">
+                                Developed a real-time hand gesture recognition system to control system operations using
+                                a webcam. Enables cursor movement, click actions, and volume control without using a
+                                mouse.
+                            </p>
+
+                            <div class="mb-4">
+                                <div class="text-white small fw-bold mb-2 font-mono">Technologies Used</div>
+                                <div class="d-flex flex-wrap">
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Python</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> OpenCV</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> cvzone</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Numpy and keyboard
+                                        module</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://github.com/Avoodaiappan2004/Hand_gestures_Control" target="_blank"
+                                    class="btn btn-outline-primary">
+                                    <i class="fab fa-github"></i> <span>View Code (GitHub)</span>
+                                </a>
+                                <a href="img/hand1.png" data-lightbox="hand-project" class="btn btn-glass">
+                                    <span>👀 View Screenshots 📷</span>
+                                </a>
+                            </div>
+
+                            <!-- Hidden Gallery Anchors -->
+                            <a href="img/hand1.png" data-lightbox="hand-project" data-title="Hand Detection"></a>
+                            <a href="img/hand2.png" data-lightbox="hand-project" data-title="Gesture Tracking"></a>
+                            <a href="img/hand3.png" data-lightbox="hand-project" data-title="Cursor Control"></a>
+                            <a href="img/hand4.png" data-lightbox="hand-project" data-title="Volume Control"></a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="project-preview-wrap">
+                                <img src="img/hand1.png" alt="Hand Gesture Controlled System Preview">
+                                <div class="project-preview-overlay">
+                                    <a href="img/hand1.png" data-lightbox="hand-project" class="btn btn-primary">
+                                        👀 View Gallery
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project 03: Kids Learning Mobile Application -->
+                <div class="project-showcase-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-5 align-items-center">
+
+                        <div class="col-lg-6">
+                            <div class="project-index-num">03</div>
+                            <h3 class="project-title-heading">
+                                <a href="img/flutter1.png" data-lightbox="flutter"
+                                    data-title="Kids Learning App - Home Screen">
+                                    Kids Learning Mobile Application
+                                </a>
+                            </h3>
+                            <p class="text-secondary mb-2" style="line-height: 1.8;">
+                                An interactive Flutter application designed to help kids learn alphabets, vowels, and
+                                Tamil letters with engaging visuals and audio support.
+                            </p>
+                            <p class="text-muted small mb-4">
+                                Makes early education fun, interactive, and easy to understand.
+                            </p>
+
+                            <div class="mb-4">
+                                <div class="text-white small fw-bold mb-2 font-mono">Key Highlights</div>
+                                <div class="d-flex flex-wrap">
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Cross Platform</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Audio Learning</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Tamil + English
+                                        Support</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Kid-Friendly UI</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://github.com/Avoodaiappan2004/Kid_alphabet_app/tree/main/lib"
+                                    target="_blank" class="btn btn-outline-primary">
+                                    <i class="fab fa-github"></i> <span>View Code (GitHub)</span>
+                                </a>
+                                <a href="img/flutter1.png" data-lightbox="flutter" class="btn btn-glass">
+                                    <span>👀 View Screenshots 📷</span>
+                                </a>
+                            </div>
+
+                            <!-- Hidden Gallery Anchors -->
+                            <a href="img/flutter1.png" data-lightbox="flutter" data-title="Home Screen"></a>
+                            <a href="img/flutter2.png" data-lightbox="flutter" data-title="Alphabet Learning"></a>
+                            <a href="img/flutter3.png" data-lightbox="flutter" data-title="Tamil Letters"></a>
+                            <a href="img/flutter4.png" data-lightbox="flutter" data-title="Audio Interaction"></a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="project-preview-wrap">
+                                <img src="img/flutter1.png" alt="Kids Learning App Preview">
+                                <div class="project-preview-overlay">
+                                    <a href="img/flutter1.png" data-lightbox="flutter" class="btn btn-primary">
+                                        👀 View Gallery
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project 04: Face Expressions -->
+                <div class="project-showcase-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="row g-5 align-items-center flex-lg-row-reverse">
+
+                        <div class="col-lg-6">
+                            <div class="project-index-num">04</div>
+                            <h3 class="project-title-heading">
+                                <a href="img/express.png" data-lightbox="expressions" data-title="Face Expressions">
+                                    Face Expressions
+                                </a>
+                            </h3>
+                            <p class="text-secondary mb-4" style="line-height: 1.8;">
+                                Built a real-time face detection app using JavaScript and face-api.js to recognize age,
+                                gender, and facial expressions through the webcam.
+                            </p>
+
+                            <div class="mb-4">
+                                <div class="text-white small fw-bold mb-2 font-mono">Models used</div>
+                                <div class="d-flex flex-wrap">
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> For Finding Age,</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> Gender</span>
+                                    <span class="tech-pill-chip"><i class="fa fa-check"></i> And for Face
+                                        Expressions</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://github.com/Avoodaiappan2004/Face-Expression" target="_blank"
+                                    class="btn btn-outline-primary">
+                                    <i class="fab fa-github"></i> <span>View Code (GitHub)</span>
+                                </a>
+                                <a href="img/express.png" data-lightbox="expressions" class="btn btn-glass">
+                                    <span>👀 View Preview 📷</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="project-preview-wrap">
+                                <img src="img/express.png" alt="Face Expressions Preview">
+                                <div class="project-preview-overlay">
+                                    <a href="img/express.png" data-lightbox="expressions" class="btn btn-primary">
+                                        👀 View Preview
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- MY PROJECTS SECTION END -->
+
+
+    <!-- RECENT WORKS / PORTFOLIO LAB START -->
+    <section class="section-wrapper" id="portfolioRecentSection">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-flask"></i> Portfolio
+                </div>
+                <h2 class="section-title">
+                    My Recent <span class="text-gradient">Works</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Interactive engineering demos, competition portals, and algorithmic game projects.
+                </p>
+            </div>
+
+            <div class="lab-works-grid">
+
+                <!-- Work 1 -->
+                <div class="lab-work-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div>
+                        <div class="lab-thumbnail-box">
+                            <img src="img/mit.png" alt="College Competition Registration App">
+                        </div>
+                        <span class="text-primary small font-mono fw-bold">Mobile Application</span>
+                        <h4 class="text-white fw-bold mt-1 mb-3">For My College Competition Registration</h4>
+                    </div>
+                    <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                        <span class="text-muted small">Interactive Portal</span>
+                        <a href="img/mit.png" class="btn btn-primary btn-sm-square" data-lightbox="Portfolio-1"
+                            title="View Fullscreen">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Work 2 -->
+                <div class="lab-work-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <div class="lab-thumbnail-box">
+                            <img src="img/speed.png" alt="Speed Detection Project">
+                        </div>
+                        <span class="text-primary small font-mono fw-bold">Computer Vision</span>
+                        <h4 class="text-white fw-bold mt-1 mb-3">Speed Detection of Moving object (Open CV)</h4>
+                    </div>
+                    <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                        <span class="text-muted small">Real-time Algorithm</span>
+                        <a href="#" class="btn btn-primary btn-sm-square" data-bs-toggle="modal"
+                            data-bs-target="#speedProjectModal" title="Project Details">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Work 3 -->
+                <div class="lab-work-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div>
+                        <div class="lab-thumbnail-box">
+                            <img src="img/tic.png" alt="Tic Tac Toe Game">
+                        </div>
+                        <span class="text-primary small font-mono fw-bold">JavaScript Game</span>
+                        <h4 class="text-white fw-bold mt-1 mb-3">Tic-Tac-Toe Game Web Application</h4>
+                    </div>
+                    <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                        <span class="text-muted small">Live Web Game</span>
+                        <a href="https://avoodaiappan2004.github.io/TicTacToe/" class="btn btn-primary btn-sm-square"
+                            target="_blank" title="Play Game Live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- RECENT WORKS END -->
+
+
+    <!-- Speed Detection Project Modal -->
+    <div class="modal fade" id="speedProjectModal" tabindex="-1" aria-labelledby="speedProjectLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white fw-bold" id="speedProjectLabel">Speed Detection of Moving Object
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/speed.png" class="img-fluid mb-4 rounded-3 border border-subtle shadow"
+                        alt="Speed Detection Screenshot">
+
+                    <p class="text-secondary mt-2" style="font-size: 1.05rem; line-height: 1.8;">
+                        This Python project detects and measures the <b class="text-white">speed of moving objects</b>
+                        in real-time using
+                        <b class="text-primary">OpenCV</b>. It uses object tracking and frame difference algorithms to
+                        calculate motion speed accurately.
+                    </p>
+
+                    <div class="p-3 my-3 rounded-3 bg-dark border border-subtle">
+                        <span class="text-muted"><b>Tech Used:</b> Python, OpenCV, NumPy, imutils</span>
+                    </div>
+
+                    <a href="https://github.com/yourgithubusername/speed-detection" target="_blank"
+                        class="btn btn-outline-primary px-4 mt-2">
+                        <i class="fab fa-github me-2"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-        <!-- Education End -->
 
-        
-       
 
-        <!-- Skills Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">My Technical Skills</p>
-                                <h1 class="display-6 text-white mb-0">Skills</h1>
-                            </div>
+    <!-- BLOG SECTION START (`#pigraBlog`) -->
+    <section class="section-wrapper" id="pigraBlog">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-newspaper"></i> Blog
+                </div>
+                <h2 class="section-title">
+                    Recent <span class="text-gradient">Posts</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Technical tutorials, software design methodologies, and development thoughts.
+                </p>
+            </div>
+
+            <div class="blog-publication-grid">
+
+                <!-- Post 1 -->
+                <div class="publication-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div>
+                        <div class="publication-art-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
+                        <span class="text-primary font-mono small"><i class="far fa-calendar-alt me-1"></i> November 12,
+                            2024</span>
+                        <h4 class="text-white fw-bold mt-2 mb-3" style="font-size: 1.25rem;">
+                            <a href="#" class="text-white text-decoration-none">Secrets of the Mobile Application</a>
+                        </h4>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" width="50">
-                                        </div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">65</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">C</p>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-python fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">70</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Python</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" width="30">
-                                    </div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">75</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">Java</p>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo" width="50">
-                                    </div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">80</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">SQL</p>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">67</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">JavaScript</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-html5 fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">HTML & CSS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="publication-meta-strip">
+                        <span class="text-muted">By <a href="#" class="text-primary fw-semibold">Bernard</a></span>
+                        <span class="text-muted">In <a href="#" class="text-primary fw-semibold">Design</a></span>
                     </div>
                 </div>
+
+                <!-- Post 2 -->
+                <div class="publication-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <div class="publication-art-placeholder">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span class="text-primary font-mono small"><i class="far fa-calendar-alt me-1"></i> November 18,
+                            2024</span>
+                        <h4 class="text-white fw-bold mt-2 mb-3" style="font-size: 1.25rem;">
+                            <a href="#" class="text-white text-decoration-none">How to Create Quality Figma Design</a>
+                        </h4>
+                    </div>
+                    <div class="publication-meta-strip">
+                        <span class="text-muted">By <a href="#" class="text-primary fw-semibold">Walker</a></span>
+                        <span class="text-muted">In <a href="#" class="text-primary fw-semibold">Media</a></span>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="publication-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div>
+                        <div class="publication-art-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="text-primary font-mono small"><i class="far fa-calendar-alt me-1"></i> November 23,
+                            2025</span>
+                        <h4 class="text-white fw-bold mt-2 mb-3" style="font-size: 1.25rem;">
+                            <a href="#" class="text-white text-decoration-none">Tutorials for Learning Development</a>
+                        </h4>
+                    </div>
+                    <div class="publication-meta-strip">
+                        <span class="text-muted">By <a href="#" class="text-primary fw-semibold">Jacob</a></span>
+                        <span class="text-muted">In <a href="#" class="text-primary fw-semibold">Lifestyle</a></span>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="publication-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div>
+                        <div class="publication-art-placeholder">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <span class="text-primary font-mono small"><i class="far fa-calendar-alt me-1"></i> November 26,
+                            2025</span>
+                        <h4 class="text-white fw-bold mt-2 mb-3" style="font-size: 1.25rem;">
+                            <a href="#" class="text-white text-decoration-none">Tutorials for Learning Development</a>
+                        </h4>
+                    </div>
+                    <div class="publication-meta-strip">
+                        <span class="text-muted">By <a href="#" class="text-primary fw-semibold">Perkel</a></span>
+                        <span class="text-muted">In <a href="#" class="text-primary fw-semibold">Design</a></span>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Blog Center External Link -->
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="d-inline-flex align-items-center gap-3 px-4 py-3 rounded-pill bg-card border border-subtle">
+                    <span class="text-secondary small">For More Works Visit</span>
+                    <a href="https://mrma1.blogspot.com/" target="_blank" class="btn btn-primary py-2 px-3 small">
+                        <span>Our Blog</span> <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-        <!-- Skills End -->
+    </section>
+    <!-- BLOG SECTION END -->
 
 
-        <!-- Service Start -->
-        <div class="container-fluid" id="pigraService">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Where My Knowledge Meets Challenge</p>
-                                <h1 class="display-6 text-white mb-0">My Projects</h1>
+    <!-- TESTIMONIALS SECTION START -->
+    <section class="section-wrapper" id="testimonialSection">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-comment-dots"></i> Testimonial
+                </div>
+                <h2 class="section-title">
+                    What People <span class="text-gradient">Say</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Feedback from peers, project collaborators, and industry leaders.
+                </p>
+            </div>
+
+            <div class="testimonial-slider-card wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-carousel owl-carousel">
+
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-avatar-bubble">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="text-white fw-bold mb-1">John Abraham</h4>
+                        <p class="text-primary font-mono small mb-3">New York, USA</p>
+                        <div class="d-flex justify-content-center gap-1 mb-4 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mx-auto"
+                            style="max-width: 680px; font-size: 1.15rem; line-height: 1.8;">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora
+                            esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut
+                            quidem laudantium tempora. Minima, saepe earum!"
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-avatar-bubble">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4 class="text-white fw-bold mb-1">John Abraham</h4>
+                        <p class="text-primary font-mono small mb-3">New York, USA</p>
+                        <div class="d-flex justify-content-center gap-1 mb-4 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mx-auto"
+                            style="max-width: 680px; font-size: 1.15rem; line-height: 1.8;">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora
+                            esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut
+                            quidem laudantium tempora. Minima, saepe earum!"
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item text-center">
+                        <div class="testimonial-avatar-bubble">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4 class="text-white fw-bold mb-1">John Abraham</h4>
+                        <p class="text-primary font-mono small mb-3">New York, USA</p>
+                        <div class="d-flex justify-content-center gap-1 mb-4 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mx-auto"
+                            style="max-width: 680px; font-size: 1.15rem; line-height: 1.8;">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora
+                            esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut
+                            quidem laudantium tempora. Minima, saepe earum!"
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- TESTIMONIALS SECTION END -->
+
+
+    <!-- CONTACT SECTION START (`#pigraContact`) -->
+    <section class="section-wrapper" id="pigraContact">
+        <div class="container-xxl">
+
+            <div class="section-head text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-tag">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </div>
+                <h2 class="section-title">
+                    Let’s Start <span class="text-gradient">A New Project</span>
+                </h2>
+                <p class="section-desc mx-auto">
+                    Have an idea or looking for a talented software developer? Reach out and let's collaborate!
+                </p>
+            </div>
+
+            <div class="contact-hub-card wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-5">
+
+                    <!-- Left: Contact Details & Bio -->
+                    <div class="col-lg-5">
+                        <h3 class="text-white fw-bold mb-3">Let's Connect</h3>
+                        <p class="text-secondary mb-4" style="line-height: 1.8;">
+                            I'm always open to discussing new projects, ideas, or opportunities to grow as a developer.
+                            If you have something exciting, feel free to reach out — let's build something amazing
+                            together
+                        </p>
+
+                        <div class="contact-action-box">
+                            <div class="contact-action-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-muted small">Address</span>
+                                <h5 class="text-white fw-bold mb-0" style="font-size: 1rem;">42, A Alwar Street,
+                                    Kovilpatti-628501</h5>
+                            </div>
+                        </div>
+
+                        <div class="contact-action-box">
+                            <div class="contact-action-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-muted small">Mail Us</span>
+                                <a href="mailto:avoodaiappan2004@gmail.com"
+                                    class="text-white fw-bold text-decoration-none" style="font-size: 1rem;">
+                                    avoodaiappan2004@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-action-box">
+                            <div class="contact-action-icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-muted small">Telephone</span>
+                                <a href="tel:+919750480363" class="text-white fw-bold text-decoration-none"
+                                    style="font-size: 1rem;">
+                                    +91 9750480363
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="service-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
+
+                    <!-- Right: Contact Form -->
+                    <div class="col-lg-7">
+                        <form class="p-4 rounded-4 bg-dark border border-subtle">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="project" placeholder="Project">
+                                        <label for="project">Your Project</label>
+                                    </div>
+                                </div>
                                 <div class="col-12">
-                                    <div class="service-item project-card p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-3">
-                                                <a href="img/face.png" data-lightbox="face-project" data-title="Face Recognition Attendance System" class="h4 mb-0">Face Recognition Attendance System</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Developed an intelligent face recognition system to automate attendance tracking with real-time statusupdates and detailed Excel reporting.
-                                                </p>
-                                            </div>
-                                            <div><b>Python Libraries</b></div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i>
-                                                Pickle</p>
-                                                <p><i class="fa fa-check me-2"></i>Open CV</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i>
-                                                FaceRecognition</p>
-                                            </div>
-                                             <div class="col-xl-2">
-                                                    <a href="https://github.com/Avoodaiappan2004/Face_Attendance_System" 
-                                                    target="_blank" 
-                                                    class="btn btn-outline-primary">
-                                                    <i class="fab fa-github me-2"></i> Code
-                                                    </a>
-                                                </div>
-                                            <a href="img/login.png" data-lightbox="face-project" data-title="Login Page"></a>
-                                             <a href="img/env.png" data-lightbox="face-project" data-title="Home Page"></a>
-                                              <a href="img/newst.png" data-lightbox="face-project" data-title="New Student Register Page"></a>
-                                              <a href="img/staff.png" data-lightbox="face-project" data-title="New Staff Page"></a>
-                                             <a href="img/faceai.png" data-lightbox="face-project" data-title="Face AI"></a>
-                                        </div>
-                                        <div class="project-overlay">
-                                            <div class="d-flex gap-3">
-                                                <a href="img/login.png" data-lightbox="face-project" class="btn btn-light text-dark">
-                                                    👀 View 📷
-                                                </a>
-                                                <a href="https://github.com/Avoodaiappan2004/Face_Attendance_System" target="_blank" class="btn btn-outline-light">
-                                                    💻 Code (Github)
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                        <div class="service-item project-card p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                            <div class="row g-4 align-items-center">
-
-                                                <!-- Title -->
-                                                <div class="col-xl-3">
-                                                    <a href="img/hand1.png" data-lightbox="hand-project" data-title="Hand Gesture Control System" class="h4 mb-0">
-                                                        Hand Gesture Controlled System
-                                                    </a>
-                                                </div>
-
-                                                <!-- Description -->
-                                                <div class="col-xl-4">
-                                                    <p class="mb-0">
-                                                        Developed a real-time hand gesture recognition system to control system operations using a webcam. 
-                                                        Enables cursor movement, click actions, and volume control without using a mouse.
-                                                    </p>
-                                                </div>
-
-                                                <!-- Technologies -->
-                                                <div><b>Technologies Used</b></div>
-                                                <div class="col-xl-3">
-                                                    <p><i class="fa fa-check me-2"></i> Python</p>
-                                                    <p><i class="fa fa-check me-2"></i> OpenCV</p>
-                                                    <p><i class="fa fa-check me-2"></i> cvzone</p>
-                                                    <p class="mb-0"><i class="fa fa-check me-2"></i>Numpy and keyboard module</p>
-                                                </div>
-
-                                                <!-- GitHub Button -->
-                                                <div class="col-xl-2">
-                                                    <a href="https://github.com/Avoodaiappan2004/Hand_gestures_Control" 
-                                                    target="_blank" 
-                                                    class="btn btn-outline-primary">
-                                                    <i class="fab fa-github me-2"></i> Code
-                                                    </a>
-                                                </div>
-
-                                                <!-- Images (Lightbox Gallery) -->
-                                                <a href="img/hand1.png" data-lightbox="hand-project" data-title="Hand Detection"></a>
-                                                <a href="img/hand2.png" data-lightbox="hand-project" data-title="Gesture Tracking"></a>
-                                                <a href="img/hand3.png" data-lightbox="hand-project" data-title="Cursor Control"></a>
-                                                <a href="img/hand4.png" data-lightbox="hand-project" data-title="Volume Control"></a>
-
-                                            </div>
-                                            <div class="project-overlay">
-                                            <div class="d-flex gap-3">
-                                                <a href="img/hand1.png" data-lightbox="hand-project" class="btn btn-light text-dark">
-                                                    👀 View 📷
-                                                </a>
-                                                <a href="https://github.com/Avoodaiappan2004/Hand_gestures_Control" target="_blank" class="btn btn-outline-light">
-                                                    💻 Code (Github)
-                                                </a>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                <div class="col-12">
-                                    <div class="service-item project-card p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-
-                                            <!-- Title -->
-                                            <div class="col-xl-3">
-                                                <a href="img/flutter1.png" data-lightbox="flutter" data-title="Kids Learning App - Home Screen" class="h4 mb-0">
-                                                    Kids Learning Mobile Application
-                                                </a>
-                                            </div>
-
-                                            <!-- Description -->
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">
-                                                    An interactive Flutter application designed to help kids learn alphabets, vowels, and Tamil letters with engaging visuals and audio support.
-                                                </p>
-                                                <p class="text-muted">
-                                                    Makes early education fun, interactive, and easy to understand.
-                                                </p>
-                                            </div>
-
-                                            <!-- Features -->
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> Cross Platform</p>
-                                                <p><i class="fa fa-check me-2"></i> Audio Learning</p>
-                                                <p><i class="fa fa-check me-2"></i> Tamil + English Support</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Kid-Friendly UI</p>
-                                            </div>
-
-                                            <!-- GitHub -->
-                                            <div class="col-xl-2">
-                                                <a href="https://github.com/Avoodaiappan2004/Kid_alphabet_app/tree/main/lib" 
-                                                target="_blank" 
-                                                class="btn btn-outline-primary">
-                                                <i class="fab fa-github me-2"></i> Code
-                                                </a>
-                                            </div>
-
-                                            <!-- Image Gallery -->
-                                            <a href="img/flutter1.png" data-lightbox="flutter" data-title="Home Screen"></a>
-                                            <a href="img/flutter2.png" data-lightbox="flutter" data-title="Alphabet Learning"></a>
-                                            <a href="img/flutter3.png" data-lightbox="flutter" data-title="Tamil Letters"></a>
-                                            <a href="img/flutter4.png" data-lightbox="flutter" data-title="Audio Interaction"></a>
-
-                                        </div>
-                                        <!-- 🔥 Hover Overlay -->
-                                        <div class="project-overlay">
-                                            <div class="d-flex gap-3">
-                                                <a href="img/flutter1.png" data-lightbox="flutter" class="btn btn-light text-dark">
-                                                    👀 View 📷
-                                                </a>
-                                                <a href="https://github.com/Avoodaiappan2004/Kid_alphabet_app/tree/main/lib" target="_blank" class="btn btn-outline-light">
-                                                    💻 Code (Github)
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 130px"></textarea>
+                                        <label for="message">Message</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="service-item project-card p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-3">
-                                                <a href="img/express.png" data-lightbox="expressions" data-title="Face Expressions"  class="h4 mb-0">Face Expressions</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Built a real-time face detection app using JavaScript and face-api.js to recognize age, gender, and facial expressions through the webcam.
-                                                </p>
-                                            </div>
-                                            <div><b>Models used</b></div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> For Finding Age,</p>
-                                                <p><i class="fa fa-check me-2"></i> Gender</p>
-                                                <p><i class="fa fa-check me-2"></i> And for Face Expressions</p>
-                                            </div>
-                                            <div class="col-xl-2">
-                                                    <a href="https://github.com/Avoodaiappan2004/Face-Expression" 
-                                                    target="_blank" 
-                                                    class="btn btn-outline-primary">
-                                                    <i class="fab fa-github me-2"></i> Code
-                                                    </a>
-                                                </div>
-                                        </div>
-                                        <div class="project-overlay">
-                                            <div class="d-flex gap-3">
-                                                <a href="img/express.png" data-lightbox="expressions" class="btn btn-light text-dark">
-                                                    👀 View 📷
-                                                </a>
-                                                <a href="https://github.com/Avoodaiappan2004/Face-Expression" target="_blank" class="btn btn-outline-light">
-                                                    💻 Code (Github)
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button class="btn btn-primary w-100 py-3 fw-bold">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
 
-
-        <!-- Portfolio Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Portfolio</p>
-                                <h1 class="display-6 text-white mb-0">My Recent Works</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Mobile Application</h4>
-                                        <h1 class="display-6 mb-0">For My College Competition Registration</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/mit.png" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="img/mit.png" class="btn btn-primary btn-lg-square"  data-lightbox="Portfolio-1"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Speed Detection of Moving object
-                                        </h4>
-                                        <h1 class="display-6 mb-0">Using Python(Open CV)</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/speed.png" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="view-img">
-                                         <a href="#" class="btn btn-primary btn-lg-square" data-bs-toggle="modal" data-bs-target="#speedProjectModal"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Tic-Tac-Toe</h4>
-                                        <h1 class="display-6 mb-0">Developed the game using JavaScript</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/tic.png" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="https://avoodaiappan2004.github.io/TicTacToe/" class="btn btn-primary btn-lg-square" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-         <!-- Speed Detection Project Modal -->
-<div class="modal fade" id="speedProjectModal" tabindex="-1" aria-labelledby="speedProjectLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content border-0 shadow-lg">
-      
-      <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title" id="speedProjectLabel">Speed Detection of Moving Object</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body text-center p-4">
-        <img src="img/speed.png" class="img-fluid mb-3 rounded shadow" alt="Speed Detection Screenshot">
-
-        <p class="mt-3">
-          This Python project detects and measures the <b>speed of moving objects</b> in real-time using 
-          <b>OpenCV</b>. It uses object tracking and frame difference algorithms to calculate motion speed accurately.
-        </p>
-
-        <p class="text-muted mb-4">
-          <b>Tech Used:</b> Python, OpenCV, NumPy, imutils
-        </p>
-
-        <a href="https://github.com/yourgithubusername/speed-detection" 
-           target="_blank" 
-           class="btn btn-outline-primary px-4">
-          <i class="fab fa-github me-2"></i> View on GitHub
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid" id="pigraBlog">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Blog</p>
-                                <h1 class="display-6 text-white mb-0">Recent Posts</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="blog-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 12, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Secrets of the Mobile Application</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Bernard</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 18, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">How to Create Quality Figma Design</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Walker</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Media</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 23, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Jacob</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Lifestyle</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-4.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 26, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Perkel</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="blog-btn d-flex justify-content-center">
-                                        <p class="mb-0 me-2">For More Works Visit</p>
-                                        <a href="https://mrma1.blogspot.com/" target="_blank" class="btn d-inline-block p-0">Our Blog</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="testimonial-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Testimonial</p>
-                                <h1 class="display-6 text-white mb-0">What People Say</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="testimonial-content h-100 pt-6 ps-6 pb-6">
-                            <div class="testimonial-carousel owl-carousel bg-light wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-1.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-2.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
-                                    <div class="row gy-4 gx-2 mb-4">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex justify-content-sm-end">
-                                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px;">
-                                                    <img src="img/testimonial-img-3.jpg" class="img-fluid" style="object-fit: cover;" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <h5 class="mb-2">John Abraham</h5>
-                                                <p class="mb-0">New York, USA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm-center">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-                                        </p>
-                                        <div class="d-flex justify-content-sm-center">
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Contact Start -->
-        <div class="container-fluid" id="pigraContact">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Contact Me</p>
-                                <h1 class="display-6 text-white mb-0">Let’s Start A New Project</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                       <div class="contact-content h-100 pt-6 ps-6 pb-6">
-                            <div class="bg-light p-4">
-                                <div class="row g-5">
-                                    <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                        <p class="mb-4">I'm always open to discussing new projects, ideas, or opportunities to grow as a developer. 
-If you have something exciting, feel free to reach out — let's build something amazing together </p>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Address</h4>
-                                                <p class="mb-0">42, A Alwar Street, Kovilpatti-628501</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Mail Us</h4>
-                                                <p class="mb-0">avoodaiappan2004@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fa fa-phone-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Telephone</h4>
-                                                <p class="mb-0">+91 9750480363</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                            <label for="name">Your Name</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                            <label for="email">Your Email</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                            <label for="phone">Your Phone</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                            <label for="project">Your Project</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                            <label for="subject">Subject</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                                            <label for="message">Message</label>
-                                                        </div>
-                
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="rounded">
-                                            <iframe class="rounded w-100" 
-                                            style="height: 400px;" src="https://www.google.com/maps?q=Kovilpatti,Tamil%20Nadu&output=embed" 
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark border-bottom-0">
-            <div class="container wow fadeIn" data-wow-delay="0.1s">
-                <div class="row g-0">
+                    <!-- Map Embed -->
                     <div class="col-12">
-                       <div class="footer-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 text-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="text-body"><a href="https://avoodaiappan2004.github.io/Portfolio/"  class="border-bottom text-white" target="_blank"><i class="fas fa-copyright text-body me-2"></i>Avoodaiappan Portfolio(View it Github)</a>, All right reserved.</span>
-                                </div>
-                                <div class="col-12 text-center text-body">
-                                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                                    Designed By <a class="border-bottom text-white">Avoodaiappan</a>
-                                </div>
-                            </div>
-                       </div>        
+                        <div class="map-embed-wrapper">
+                            <iframe class="w-100" style="height: 380px; border:0;"
+                                src="https://www.google.com/maps?q=Kovilpatti,Tamil%20Nadu&output=embed" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Location Map - Kovilpatti">
+                            </iframe>
+                        </div>
                     </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="site-footer">
+        <div class="container-xxl">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <a href="#pigraHome" class="brand-badge p-0">
+                        <div class="brand-avatar">A</div>
+                        <span>&lt;Avoodaiappan /&gt;</span>
+                    </a>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a class="social-circle-btn" href="#" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="social-circle-btn" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="social-circle-btn" href="#" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="social-circle-btn" href="https://www.linkedin.com/in/avoodaiappan-m-23534324a/"
+                            target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-secondary small d-block">
+                        <a href="https://avoodaiappan2004.github.io/Portfolio/"
+                            class="border-bottom text-white text-decoration-none" target="_blank">
+                            <i class="fas fa-copyright text-primary me-2"></i>Avoodaiappan Portfolio(View it Github)
+                        </a>, All right reserved.
+                    </span>
+                    <span class="text-muted small">Designed By <a
+                            class="border-bottom text-white text-decoration-none">Avoodaiappan</a></span>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </footer>
+    <!-- FOOTER END -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Back to Top"><i class="fa fa-arrow-up"></i></a>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
 </html>
