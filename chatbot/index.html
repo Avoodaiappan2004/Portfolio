@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avoodaiappan AI Assistant</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            width: 400px;
+            height: 600px;
+
+            background: white;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+
+            display: flex;
+            flex-direction: column;
+
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background: #111827;
+            color: white;
+
+            padding: 20px;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+        .messages {
+            flex: 1;
+
+            padding: 20px;
+
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 15px;
+
+            padding: 12px 15px;
+
+            border-radius: 10px;
+
+            max-width: 80%;
+
+            line-height: 1.5;
+        }
+
+        .user {
+            background: #dbeafe;
+
+            margin-left: auto;
+        }
+
+        .bot {
+            background: #f3f4f6;
+
+            margin-right: auto;
+        }
+
+        .input-area {
+            display: flex;
+
+            padding: 15px;
+
+            border-top: 1px solid #ddd;
+        }
+
+        input {
+            flex: 1;
+
+            padding: 12px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 8px;
+
+            outline: none;
+        }
+
+        button {
+            margin-left: 10px;
+
+            padding: 12px 18px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background: #111827;
+
+            color: white;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        🤖 Avoodaiappan AI Assistant
+    </div>
+
+
+    <div class="messages" id="messages">
+
+        <div class="message bot">
+            Hi! Ask me anything about Avoodaiappan's portfolio.
+        </div>
+
+    </div>
+
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="question"
+            placeholder="Ask about the portfolio..."
+        >
+
+        <button onclick="askQuestion()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+async function askQuestion() {
+
+    const input = document.getElementById("question");
+
+    const question = input.value.trim();
+
+    if (!question) {
+        return;
+    }
+
+
+    // Show user message
+
+    addMessage(question, "user");
+
+    input.value = "";
+
+
+    // Show loading message
+
+    const loading = addMessage(
+        "Thinking...",
+        "bot"
+    );
+
+
+    try {
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/chat",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    question: question
+                })
+            }
+        );
+
+
+        const data = await response.json();
+
+
+        // Remove loading message
+
+        loading.remove();
+
+
+        // Show AI response
+
+        addMessage(
+            data.answer,
+            "bot"
+        );
+
+    }
+
+    catch (error) {
+
+        loading.remove();
+
+        addMessage(
+            "Unable to connect to the AI server.",
+            "bot"
+        );
+
+        console.error(error);
+
+    }
+
+}
+
+
+function addMessage(text, type) {
+
+    const messages =
+        document.getElementById("messages");
+
+
+    const message =
+        document.createElement("div");
+
+
+    message.className =
+        "message " + type;
+
+
+    message.textContent = text;
+
+
+    messages.appendChild(message);
+
+
+    messages.scrollTop =
+        messages.scrollHeight;
+
+
+    return message;
+}
+
+</script>
+
+</body>
+
+</html>

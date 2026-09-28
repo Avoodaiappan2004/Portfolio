@@ -1,0 +1,409 @@
+===== PORTFOLIO CONTENT =====
+
+Avoodaiappan's PortFolio
+Loading...
+A
+Avoodaiappan
+Home
+About
+Service
+Blog
+Contact
+Get in Touch
+👋 Hello I'm Avoodaiappan M • Junior Developer
+Junior
+Software
+Developer
+Passionate and detail-oriented Junior Software Developer with a strong foundation in
+programming, software development, and problem-solving. Skilled in Python, JavaScript, Java
+Location
+42 A, Alwar Street Kovilpatti-628501
+Email
+avoodaiappan2004@gmail.com
+Phone
+9750480363
+GitHub
+Avoodaiappan2004
+Explore Projects
+Download CV
+Python Developer
+MCA Scholar
+About Me
+A
+Junior Software
+Developer
+Proficient in frontend development, database management
+Hello, I'm Avoodaiappan
+I thrive on learning new technologies, optimizing code, and creating efficient solutions. With a
+keen interest in AI, machine learning, and automation, I am always exploring innovative ways to
+improve software development. My experience includes working on real-world projects, one of that
+is Face Recognition Attendance System
+💡
+Looking to contribute my skills and grow in a dynamic development
+environment
+Engineering Highlights
+🔹
+Strong understanding of algorithms, data structures, and software
+design principles.
+🔹
+Enthusiastic about learning new technologies and improving coding
+skills.
+🔹
+Enthusiastic about AI, ML, and automation for enhancing software
+efficiency.
+Curriculum
+Vitae
+Want to know more?
+Download my complete verified CV to review my academic credentials and technical projects.
+Download My CV
+My education qualification
+Academic
+Journey
+A track record of consistent academic excellence and specialized technical computing education.
+PG
+2025 - Prusuing
+Master of Computer Application
+(MCA)
+Francis Xavier Engineering
+College,Tirunelveli
+I am now pursuing my Master of Computer Applications (MCA) to further specialize in advanced
+computing, software engineering, and emerging technologies.
+UG
+2022 - 2025
+B.Sc Computer Science
+Sri S.Ramasamy Naidu
+Memorial College, Sattur
+I have completed my Bachelor’s Degree in Computer Science with a CGPA of 8.62. Throughout my
+academic journey, I developed a strong foundation in software,web development, data
+structures and programming languages.
+Schooling
+2021 - 2022
+HSC II nd Year (12th)
+St Paul's Matriculation
+Higher Secondary School, Kovilpatti
+I completed my 12th grade with 85%, developing a strong foundation in mathematics and
+logical reasoning.
+My Technical Skills
+Core Technical
+Proficiencies
+Hands-on software development competencies, languages, database tools, and web technologies.
+65
+%
+C Programming
+Fundamental system programming & algorithms
+85
+%
+Python
+Computer vision, AI/ML, automation & scripting
+75
+%
+Java
+Object-oriented architecture & backend logic
+80
+%
+SQL
+Relational databases, queries & optimization
+67
+%
+JavaScript
+Dynamic client-side programming & APIs
+87
+%
+HTML & CSS
+Responsive layouts, modern UI styling & web design
+Where My Knowledge Meets Challenge
+Featured
+Projects
+Real-world applications engineered with Python, Computer Vision, Flutter, and JavaScript.
+01
+Face Recognition Attendance System
+Developed an intelligent face recognition system to automate attendance tracking with
+real-time statusupdates and detailed Excel reporting.
+Python Libraries
+Pickle
+Open CV
+FaceRecognition
+View Code (GitHub)
+👀 View Screenshots 📷
+👀 View Gallery
+02
+GestureX - Touchless Computer & Game Controller
+Developed a real-time AI-powered hand gesture recognition system that
+enables touchless interaction with computers and browser games.
+GestureX uses a webcam, OpenCV, and MediaPipe to detect hand landmarks
+and convert recognized gestures into mouse, click, scrolling, and
+keyboard-based game controls.
+Technologies Used
+Python
+OpenCV
+MediaPipe
+NumPy
+PyAutoGUI
+Computer Vision
+View Code (GitHub)
+👀 View Screenshots 📷
+👀 View Gallery
+03
+Kids Learning Mobile Application
+An interactive Flutter application designed to help kids learn alphabets, vowels, and
+Tamil letters with engaging visuals and audio support.
+Makes early education fun, interactive, and easy to understand.
+Key Highlights
+Cross Platform
+Audio Learning
+Tamil + English
+Support
+Kid-Friendly UI
+View Code (GitHub)
+👀 View Screenshots 📷
+👀 View Gallery
+04
+Face Expressions
+Built a real-time face detection app using JavaScript and face-api.js to recognize age,
+gender, and facial expressions through the webcam.
+Models used
+For Finding Age,
+Gender
+And for Face
+Expressions
+View Code (GitHub)
+👀 View Preview 📷
+👀 View Preview
+Portfolio
+My Recent
+Works
+Interactive engineering demos, competition portals, and algorithmic game projects.
+Mobile Application
+For My College Competition Registration
+Interactive Portal
+Computer Vision
+Speed Detection of Moving object (Open CV)
+Real-time Algorithm
+JavaScript Game
+Tic-Tac-Toe Game Web Application
+Live Web Game
+Speed Detection of Moving Object
+This Python project detects and measures the
+speed of moving objects
+in real-time using
+OpenCV
+. It uses object tracking and frame difference algorithms to
+calculate motion speed accurately.
+Tech Used:
+Python, OpenCV, NumPy, imutils
+View on GitHub
+Contact Me
+Let’s Start
+A New Project
+Have an idea or looking for a talented software developer? Reach out and let's collaborate!
+Let's Connect
+I'm always open to discussing new projects, ideas, or opportunities to grow as a developer.
+If you have something exciting, feel free to reach out — let's build something amazing
+together
+Address
+42, A Alwar Street,
+Kovilpatti-628501
+Mail Us
+avoodaiappan2004@gmail.com
+Telephone
++91 9750480363
+Your Name
+Your Email
+Your Phone
+Your Project
+Subject
+Message
+Send Message
+A
+<Avoodaiappan />
+Avoodaiappan Portfolio(View it Github)
+, All right reserved.
+Designed By
+Avoodaiappan
+
+
+===== PORTFOLIO LINKS =====
+
+Link Text: A Avoodaiappan
+URL: #pigraHome
+------------------------------------------------------------
+Link Text: Home
+URL: #pigraHome
+------------------------------------------------------------
+Link Text: About
+URL: #pigraAbout
+------------------------------------------------------------
+Link Text: Service
+URL: #pigraService
+------------------------------------------------------------
+Link Text: Blog
+URL: #pigraBlog
+------------------------------------------------------------
+Link Text: Contact
+URL: #pigraContact
+------------------------------------------------------------
+Link Text: Get in Touch
+URL: #pigraContact
+------------------------------------------------------------
+Link Text: Explore Projects
+URL: #pigraService
+------------------------------------------------------------
+Link Text: Download CV
+URL: img/cv.pdf
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: https://www.linkedin.com/in/avoodaiappan-m-23534324a/
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: Download My CV
+URL: img/cv.pdf
+------------------------------------------------------------
+Link Text: Face Recognition Attendance System
+URL: img/face.png
+------------------------------------------------------------
+Link Text: View Code (GitHub)
+URL: https://github.com/Avoodaiappan2004/Face_Attendance_System
+------------------------------------------------------------
+Link Text: 👀 View Screenshots 📷
+URL: img/login.png
+------------------------------------------------------------
+Link Text: 
+URL: img/login.png
+------------------------------------------------------------
+Link Text: 
+URL: img/env.png
+------------------------------------------------------------
+Link Text: 
+URL: img/newst.png
+------------------------------------------------------------
+Link Text: 
+URL: img/staff.png
+------------------------------------------------------------
+Link Text: 
+URL: img/faceai.png
+------------------------------------------------------------
+Link Text: 👀 View Gallery
+URL: img/login.png
+------------------------------------------------------------
+Link Text: GestureX - Touchless Computer & Game Controller
+URL: img/gesture1.png
+------------------------------------------------------------
+Link Text: View Code (GitHub)
+URL: https://github.com/Avoodaiappan2004/GestureX-System_Control
+------------------------------------------------------------
+Link Text: 👀 View Screenshots 📷
+URL: img/gesture1.png
+------------------------------------------------------------
+Link Text: 
+URL: img/gesture1.png
+------------------------------------------------------------
+Link Text: 
+URL: img/gesture2.png
+------------------------------------------------------------
+Link Text: 
+URL: img/gesture3.png
+------------------------------------------------------------
+Link Text: 
+URL: img/gesture4.png
+------------------------------------------------------------
+Link Text: 
+URL: img/gesture5.png
+------------------------------------------------------------
+Link Text: 👀 View Gallery
+URL: img/gesture1.png
+------------------------------------------------------------
+Link Text: Kids Learning Mobile Application
+URL: img/flutter1.png
+------------------------------------------------------------
+Link Text: View Code (GitHub)
+URL: https://github.com/Avoodaiappan2004/Kid_alphabet_app/tree/main/lib
+------------------------------------------------------------
+Link Text: 👀 View Screenshots 📷
+URL: img/flutter1.png
+------------------------------------------------------------
+Link Text: 
+URL: img/flutter1.png
+------------------------------------------------------------
+Link Text: 
+URL: img/flutter2.png
+------------------------------------------------------------
+Link Text: 
+URL: img/flutter3.png
+------------------------------------------------------------
+Link Text: 
+URL: img/flutter4.png
+------------------------------------------------------------
+Link Text: 👀 View Gallery
+URL: img/flutter1.png
+------------------------------------------------------------
+Link Text: Face Expressions
+URL: img/express.png
+------------------------------------------------------------
+Link Text: View Code (GitHub)
+URL: https://github.com/Avoodaiappan2004/Face-Expression
+------------------------------------------------------------
+Link Text: 👀 View Preview 📷
+URL: img/express.png
+------------------------------------------------------------
+Link Text: 👀 View Preview
+URL: img/express.png
+------------------------------------------------------------
+Link Text: 
+URL: img/mit.png
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: https://avoodaiappan2004.github.io/TicTacToe/
+------------------------------------------------------------
+Link Text: View on GitHub
+URL: https://github.com/yourgithubusername/speed-detection
+------------------------------------------------------------
+Link Text: avoodaiappan2004@gmail.com
+URL: mailto:avoodaiappan2004@gmail.com
+------------------------------------------------------------
+Link Text: +91 9750480363
+URL: tel:+919750480363
+------------------------------------------------------------
+Link Text: A <Avoodaiappan />
+URL: #pigraHome
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------
+Link Text: 
+URL: https://www.linkedin.com/in/avoodaiappan-m-23534324a/
+------------------------------------------------------------
+Link Text: Avoodaiappan Portfolio(View it Github)
+URL: https://avoodaiappan2004.github.io/Portfolio/
+------------------------------------------------------------
+Link Text: 
+URL: #
+------------------------------------------------------------

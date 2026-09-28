@@ -32,8 +32,293 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+<style>
 
+#chatbot-button {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #111827;
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.25);
+}
+
+
+#chatbot-window {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 95px;
+
+    width: 370px;
+    height: 500px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.25);
+
+    display: none;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+
+#chatbot-header {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+#chatbot-header button {
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+#chatbot-messages {
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    color: #111827;
+}
+
+.chat-message {
+    padding: 12px 15px;
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    max-width: 85%;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+    color: #111827;
+}
+
+.bot-message {
+    background: #f1f5f9;
+    color: #111827;
+
+    margin-right: auto;
+}
+.bot-message p {
+    margin: 6px 0 10px;
+}
+
+
+.bot-message strong {
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.bot-message h1,
+.bot-message h2,
+.bot-message h3 {
+    color: #111827;
+
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+
+.bot-message ul,
+.bot-message ol {
+    padding-left: 22px;
+
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+
+.bot-message li {
+    margin-bottom: 5px;
+}
+
+
+.bot-message table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 10px 0;
+
+    font-size: 13px;
+}
+
+
+.bot-message th,
+.bot-message td {
+    border: 1px solid #cbd5e1;
+
+    padding: 8px;
+
+    text-align: left;
+
+    color: #111827;
+}
+
+
+.bot-message th {
+    background: #e2e8f0;
+
+    font-weight: 700;
+}
+
+
+.bot-message code {
+    background: #e5e7eb;
+
+    padding: 2px 5px;
+
+    border-radius: 4px;
+
+    color: #111827;
+}
+
+
+.bot-message pre {
+    background: #1e293b;
+
+    color: #f8fafc;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    overflow-x: auto;
+}
+
+.user-message {
+    background: #dbeafe;
+    color: #111827;
+
+    margin-left: auto;
+}
+
+
+#chatbot-input-area {
+
+    display: flex;
+
+    padding: 10px;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+}
+
+
+#chatbot-input {
+    flex: 1;
+
+    padding: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #111827;
+
+    background: #ffffff;
+
+    font-size: 15px;
+}
+
+#chatbot-input::placeholder {
+    color: #64748b;
+}
+
+#chatbot-input-area button {
+
+    margin-left: 8px;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111827;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+
+    #chatbot-window {
+
+        right: 10px;
+        bottom: 85px;
+
+        width: calc(100% - 20px);
+
+        height: 70vh;
+    }
+
+}
+
+</style>
 <body>
     <!-- Ambient Lighting Effects -->
     <div class="ambient-glow-1"></div>
@@ -1350,5 +1635,217 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+<script>
 
+function toggleChatbot() {
+
+    const chatbot =
+        document.getElementById("chatbot-window");
+
+    if (chatbot.style.display === "flex") {
+
+        chatbot.style.display = "none";
+
+    } else {
+
+        chatbot.style.display = "flex";
+
+    }
+
+}
+
+
+function handleChatKey(event) {
+
+    if (event.key === "Enter") {
+
+        sendChatMessage();
+
+    }
+
+}
+
+
+function addChatMessage(text, type) {
+
+    const messages =
+        document.getElementById("chatbot-messages");
+
+    const message =
+        document.createElement("div");
+
+    message.className =
+        "chat-message " + type;
+
+
+    if (type === "bot-message") {
+
+        message.innerHTML =
+            marked.parse(text);
+
+    } else {
+
+        message.textContent = text;
+
+    }
+
+
+    messages.appendChild(message);
+
+    messages.scrollTop =
+        messages.scrollHeight;
+
+    return message;
+}
+
+
+async function sendChatMessage() {
+
+    const input =
+        document.getElementById("chatbot-input");
+
+
+    const question =
+        input.value.trim();
+
+
+    if (!question) {
+
+        return;
+
+    }
+
+
+    // Show user question
+
+    addChatMessage(
+        question,
+        "user-message"
+    );
+
+
+    input.value = "";
+
+
+    // Loading message
+
+    const loading =
+        addChatMessage(
+            "Thinking...",
+            "bot-message"
+        );
+
+
+    try {
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:8000/chat",
+                {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        question: question
+                    })
+
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Server error: " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        loading.remove();
+
+
+        addChatMessage(
+            data.answer,
+            "bot-message"
+        );
+
+    }
+
+
+    catch (error) {
+
+        loading.remove();
+
+
+        addChatMessage(
+            "Sorry, I couldn't connect to the AI server.",
+            "bot-message"
+        );
+
+
+        console.error(error);
+
+    }
+
+}
+
+</script>
+<!-- AI CHATBOT -->
+
+<div id="ai-chatbot">
+
+    <button id="chatbot-button" onclick="toggleChatbot()">
+        🤖
+    </button>
+
+
+    <div id="chatbot-window">
+
+        <div id="chatbot-header">
+            <span>🤖 Avoodaiappan AI</span>
+
+            <button onclick="toggleChatbot()">
+                ×
+            </button>
+        </div>
+
+
+        <div id="chatbot-messages">
+
+            <div class="chat-message bot-message">
+                Hi! 👋 Ask me anything about Avoodaiappan's portfolio.
+            </div>
+
+        </div>
+
+
+        <div id="chatbot-input-area">
+
+            <input
+                type="text"
+                id="chatbot-input"
+                placeholder="Ask about my portfolio..."
+                onkeydown="handleChatKey(event)"
+            >
+
+            <button onclick="sendChatMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 </html>
